@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-image: url("/public/Assets/homepageimg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#e5959500 0%, #4e2b2b 100%);
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.center{
+    display:grid;
+    place-items: center;
+    margin: 7rem 0;
+}
+
+.center .logo{
+    height: 7rem;
+    width: 7rem;
+    background-color: white;
+    color: crimson;
+    font-size: 4.8rem;
+    border-radius: 50%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container p{
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 600;
+}
+
+.input-fields{
+    display: grid;
+    grid-template-columns: auto 60%;
+    width: 46rem;
+}
+
+.grid-items:last-child{
+    margin-left: 2rem;
+}
+
+.grid-items select, .search-bar{
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+}
+
+li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+li:last-child{
+    border-bottom: none;
+    margin-bottom: none;
+}
+
+ul{
+    margin: 0.4rem auto;
+    background-color: white;
+    position: absolute;
+    width: 25.6rem;
+}
+
+/* Styling Quick Seacrh and Sub heading */
+.main-sec{
+    padding: 2.5rem 7.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 2.5rem;
+    color: #192f60;
+    font-weight: 900;
+}
+
+.sub-heading{
+    font-size: 1.1rem;
+    color: #8c96ab;
+    margin-bottom: 1.5rem;
+}
+
+.rows{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+/* Stlying Quick Search Boxes */
+.box{
+    height: 15rem;
+    width: 20rem;
+    position: relative;
+    box-shadow:0 6px 6px 0 rgb(0 0 0 / 16%);
+    position: relative;
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.box:hover{
+    transition: show 5s ease-in-out;
+}
+
+.imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} 
+
+.imgbox img{
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    opacity: 0;
+    z-index: 0;
+}
+
+.contentbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10rem;
+    border: 2px solid white;
+    width: 75%;
+    color: white;
+    margin: 2.5rem 2.5rem;
+    text-align: center;
+    padding: 2rem 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.show{
+    opacity: 0.75;
+    transition: all 0.4s ease-in-out;
+}
+
+.showContent{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.hide{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 426px){
+    .center .logo{
+        height: 5rem;
+        width: 5rem;
+        font-size: 3.5rem;
+    }
+
+    .container p{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .input-fields{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        width: 20rem;
+    }
+
+    .grid-items:last-child{
+        margin-left: 0;
+    }
+
+    .grid-items{
+        margin-bottom: 1rem;
+    }
+
+    ul{
+        width: 20rem;
+    } 
+    
+    .main-sec{
+        padding: 2rem;
+    }
+}
+
+/* @media only screen and (max-width: 426px){
+    .container{
+        background-size: cover;
+        padding: 0.8rem;
+    }
+    .container .mobilemenu{
+        display: block;
+    }
+    .container .user-sec{
+        position: absolute;
+        top: 8%;
+        left: 42%;
+        background-color: white;
+        margin: 0;
+        flex-direction: column;
+        padding: 0.2rem
+    }    
+
+    .user-sec a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .user-sec a:hover{
+        color: crimson;
+    }
+    
+    .user-sec a:not(:last-child){
+        margin-right: 0;
+    }
+    
+    .user-sec a:last-child{
+        border: none;
+        padding: 0;
+    }
+    
+    .user-sec a:last-child:hover{
+        border: none;
+    }
+    
+
+    .center{
+        margin: 5rem 0;
+        
+    }
+    
+    .center .logo{
+        height: 5rem;
+        width: 5rem;
+        font-size: 3.5rem;
+    }
+    
+    .container p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .main-sec{
+        padding: 1rem 2.5rem;
+    }
+    
+    .sub-heading{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .user-sec{
+        margin: 1.5rem 1rem 1rem 32rem;
+        display: block;
+    }
+
+    .user-sec a{
+        font-size: 0.9rem;
+    }
+    .container p{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+
+    .heading, .sub-heading{
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+
+    .user-sec{
+        margin: 2rem 4rem 0rem 44rem;
+        display: block;
+    }
+
+    .user-sec a{
+        font-size: 1rem;
+    }
+    
+
+    .heading, .sub-heading{
+        margin-left: 0rem;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .user-sec{
+        margin: 2rem 4rem 0rem 70rem;
+    }
+    
+    .user-sec a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+} */

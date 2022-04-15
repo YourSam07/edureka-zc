@@ -1,0 +1,465 @@
+.headingF{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: #192f60;
+}
+
+.filter-main-sec{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+}
+
+.Filter{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    padding: 1.5rem 2.5rem;
+    width: 35%;
+}
+
+.Filter h2{
+    color: #192f60;
+}
+
+.headings{
+    color: #192f60;
+    font-size: 1.1rem; 
+    font-weight: 700;
+    margin: 0.3rem 0 0.4rem 0;
+}
+
+#Select{
+    padding: 0.7rem;
+    font-size:1rem;
+    width: 90%;
+}
+
+.subs{
+    color: #8c96ab;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subs .sub-head{
+    margin-bottom: 1rem;
+}
+
+.resWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 8rem;
+}
+
+.item{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    width: 95%;
+}
+
+.above-line{
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    height: 120px;
+    width: 18%;
+}
+
+.image img{
+    height: 120px;
+    width: 120px;
+    border-radius: 1rem;
+}
+
+.left-of-image{
+    height: 120px;
+    width: 72%;
+    margin-left: 2rem;
+}
+
+.blockhead{
+    color: #192f60;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fort{
+    color: #192f60;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.address{
+    color: #636f88;
+}
+
+.line{
+    height: 0;
+    border: 1px solid #dedfe5;
+    background-color:#dedfe5;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.below-line{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftdata1, .leftdata2{
+    color:#636f88;
+    font-size: 15px;
+}
+
+.in-right{
+    margin-left: 4.5rem;
+}
+
+.rightdata1, .rightdata2{
+    color: #192f60;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.filter-main-sec .buttons{
+    height: 36px;
+    margin: 1rem auto;
+}
+
+.bt{
+    height: 36px;
+    width: 36px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #8c96ab;
+    border-radius: 7px;
+    border: solid 1px #8c96ab;
+    background-color: #fff;
+    margin: 0px 3px;
+}
+
+.bt:hover{
+    cursor: pointer;
+    background-color: #d1d5dd;
+}
+
+.openF{
+    display: flex;
+    flex-direction: column;
+}
+
+.noRecords{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: crimson;
+    font-size: 4rem;
+    margin-top: 23%;
+}
+
+.iconArrowDown{
+    display: none;
+    float:right;
+}
+
+@media only screen and (max-width: 426px){
+    .headingF{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }   
+
+    .filter-main-sec{
+        flex-direction: column;
+    }
+
+    .iconArrowDown{
+        display: block;
+    }
+
+    .Filter{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .Filter-drop{
+        display: none;
+    }
+    
+    .dropFilter{
+        display: block;
+    }
+
+    #Select{
+        width: 100%;
+    }
+
+    .resWrapper, .item{
+        width: 100%;
+        margin-left: 0;
+    }
+    .image{
+        height: 90px;
+        width: 90px;
+        margin: 0;
+    }
+
+    .image img{
+        height: 90px;
+        width: 90px;
+    }
+
+    .left-of-image{
+        margin-left: 3.5rem;
+        height: 100px;
+    }
+
+    .blockhead{
+        font-size: 1.2rem;
+    }
+
+    .fort, .address{
+        font-size: 1rem;
+    }
+
+    .line{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .in-right{
+        margin-left: 2.9rem;
+    }
+
+    .noRecords{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* @media only screen and (max-width: 426px){
+    .filter-main-sec{
+        grid-template-columns: 1fr;
+        padding:1rem;
+    }
+
+    .Filter{
+        margin-bottom: 2.5rem;
+    }
+
+    .navbar .mobilemenuF{
+        display: block;
+    }
+
+    .navbar{
+        padding: 0.5rem;
+    }
+
+    .logoF{
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 1.7rem;
+    }
+
+    .navbar .user-secF{
+        position: absolute;
+        top: 73%;
+        left: 50%;
+        background-color: white;
+        margin: 0;
+        flex-direction: column;
+        padding: 0.2rem;
+        border: 3px solid black;
+    }    
+
+    .user-secF a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .user-secF a:hover{
+        color: crimson;
+    }
+    
+    .user-secF a:not(:last-child){
+        margin-right: 0;
+    }
+    
+    .user-secF a:last-child{
+        border: none;
+        padding: 0;
+    }
+    
+    .user-secF a:last-child:hover{
+        border: none;
+    }
+
+    .headingF{
+        font-size: 0.8rem;
+    }
+
+    .Filter h2{
+        font-size: 1.3rem;
+    }
+
+    .Filter h2 span{
+        display: inline;
+        margin-left: 9rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .Filter h2 span:hover{
+        color: crimson;
+    }
+
+    .Restaurants{
+        margin: 0;
+        width: 100%;
+    }
+
+    .blockhead{
+        font-size: 1.1rem;
+    }
+
+    .fort, .address{
+        font-size: 0.9rem;
+    }
+
+    .image img{
+        height: 80px;
+        width: 80px;
+    } 
+
+    .noRecords{
+        font-size: 2.5rem;
+    }
+} 
+
+@media only screen and (min-width: 768px){
+    .user-secF{
+        margin: 0rem;
+        display: block;
+    }
+    
+    .filter-main-sec{
+        grid-template-columns: 1.3fr 3fr;
+        padding: 1.5rem;
+    }
+    .Filter{
+        padding: 1rem;
+        width: 100%;
+        max-height: 87vh;
+    }
+
+    .Filter h2{
+        font-size: 1.3rem;
+    }
+
+    .Restaurants{
+        margin: 0rem 3rem;
+        width: 90%;
+    }
+
+    .blockhead{
+        font-size: 1.1rem;
+    }
+
+    .fort, .address{
+        font-size: 0.9rem;
+    }
+
+    .image img{
+        height: 90px;
+        width: 90px;
+    } 
+}
+
+@media only screen and (min-width: 1024px){
+    .user-secF{
+        margin: 0rem;
+        display: block;
+    }
+    
+    .filter-main-sec{
+        grid-template-columns: 1.3fr 3fr;
+        padding: 1.5rem;
+    }
+    .Filter{
+        padding: 1rem;
+        width: 100%;
+        max-height: 87vh;
+    }
+
+    .Filter h2{
+        font-size: 1.3rem;
+    }
+
+    .Restaurants{
+        margin: 0rem 3rem;
+        width: 90%;
+    }
+
+    .blockhead{
+        font-size: 1.3rem;
+    }
+
+    .fort, .address{
+        font-size: 1.1rem;
+    }
+
+    .image img{
+        height: 110px;
+        width: 110px;
+    } 
+}
+
+@media only screen and (min-width: 1440px){
+    .user-secF{
+        margin: 0rem;
+        display: block;
+    }
+    
+    .filter-main-sec{
+        grid-template-columns: 1.3fr 3fr;
+        padding: 1rem 3rem;
+    }
+    .Filter{
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .Filter h2{
+        font-size: 1.5rem;
+    }
+
+    .Restaurants{
+        margin: 0rem 3rem;
+        width: 90%;
+    }
+
+    .blockhead{
+        font-size: 1.8rem;
+    }
+
+    .fort, .address{
+        font-size: 1.2rem;
+    }
+
+    .image img{
+        height: 120px;
+        width: 120px;
+    } 
+}
+ */
