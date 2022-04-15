@@ -47,7 +47,7 @@ class Details extends React.Component {
 
         axios({
             method: 'GET',
-            url: `http://localhost:4567/restbyid/${restaurant}`,
+            url: `https://obscure-stream-64864.herokuapp.com/restbyid/${restaurant}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -59,7 +59,7 @@ class Details extends React.Component {
     handleOrder = (resId) => {
         axios({
             method: 'GET',
-            url: `http://localhost:4567/menuitems/${resId}`,
+            url: `https://obscure-stream-64864.herokuapp.com/menuitems/${resId}`,
             headers: { 'Content-Type': 'application/json' }
         })
             .then(response => {
@@ -135,7 +135,7 @@ class Details extends React.Component {
     }
 
     getData = (data) => {
-        return fetch(`http://localhost:4567/payment`, {
+        return fetch(`https://obscure-stream-64864.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",

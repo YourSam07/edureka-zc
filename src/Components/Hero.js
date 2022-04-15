@@ -19,7 +19,7 @@ class Hero extends React.Component{
 
         axios({
             method: 'GET',
-            url: `http://localhost:4567/restaurants/${locationId}`,
+            url: `https://obscure-stream-64864.herokuapp.com/restaurants/${locationId}`,
             headers: { 'Content-Type' : 'application/json'}
         })
             .then( response => {

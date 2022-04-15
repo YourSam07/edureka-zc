@@ -15,7 +15,7 @@ class Qsearch extends React.Component{
     componentDidMount(){
     axios({
         method: 'GET',
-        url: 'http://localhost:4567/mealtypes',
+        url: 'https://obscure-stream-64864.herokuapp.com/mealtypes',
         headers: { 'Content-Type' : 'application/json'}
     })
         .then( response => {

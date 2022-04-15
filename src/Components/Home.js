@@ -18,7 +18,7 @@ class Home extends React.Component{
         sessionStorage.clear();
         axios({
             method: 'GET',
-            url: 'http://localhost:4567/locations',
+            url: 'https://obscure-stream-64864.herokuapp.com/locations',
             headers: { 'Content-Type' : 'application/json'}
         })
             .then( response => {

@@ -114,7 +114,7 @@ class Navbar extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:4567/signup',
+            url: 'https://obscure-stream-64864.herokuapp.com/signup',
             headers: { 'Content-Type': 'application/json' },
             data: newUserGoogle
         })
@@ -137,7 +137,7 @@ class Navbar extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:4567/signup',
+            url: 'https://obscure-stream-64864.herokuapp.com/signup',
             headers: { 'Content-Type': 'application/json' },
             data: newUserGoogle
         })
@@ -157,7 +157,7 @@ class Navbar extends React.Component {
         
         axios({
             method: 'POST',
-            url: 'http://localhost:4567/login',
+            url: 'https://obscure-stream-64864.herokuapp.com/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginCreds
         })
@@ -183,7 +183,7 @@ class Navbar extends React.Component {
         
         axios({
             method: 'POST',
-            url: 'http://localhost:4567/login',
+            url: 'https://obscure-stream-64864.herokuapp.com/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginCreds
         })
@@ -282,7 +282,7 @@ class Navbar extends React.Component {
 
             axios({
                 method: 'POST',
-                url: 'http://localhost:4567/signup',
+                url: 'https://obscure-stream-64864.herokuapp.com/signup',
                 headers: { 'Content-Type': 'application/json' },
                 data: newUser
             })
@@ -308,7 +308,7 @@ class Navbar extends React.Component {
         
         axios({
             method: 'POST',
-            url: 'http://localhost:4567/login',
+            url: 'https://obscure-stream-64864.herokuapp.com/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginCreds
         })
